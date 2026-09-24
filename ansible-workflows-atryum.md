@@ -18,9 +18,9 @@ Atryum provides in-the-loop agentic guardrails to any agentic process. It inspec
 
 To see this in action:
 
-1. **Task Agent:** Set the agent to do something disallowed by the Atryum Charter.
+1. **Task Agent:** Prompt it to do something disallowed by the Atryum charter.
 2. **Atryum:** Disallow that action in the charter.
-3. Run the Orchestrator workflow.
+3. **Orchestrator:** Run the workflow.
 
 <img width="1589" height="855" alt="image" src="https://github.com/user-attachments/assets/8debbafc-fdb9-47ca-8221-15cfa4222b3b" />
 
@@ -44,10 +44,20 @@ Setup complete. When running the Workflow you will see all tool calls performed 
 
 <img width="2875" height="981" alt="image" src="https://github.com/user-attachments/assets/75d80688-383a-403f-adf7-eff70a62b573" />
 
-<img width="997" height="1116" alt="image" src="https://github.com/user-attachments/assets/568f68db-60d1-41f2-9657-5f4ccadec18f" />
 
 <img width="1866" height="844" alt="image" src="https://github.com/user-attachments/assets/c10bb376-0dcd-4531-84c6-987201cab4b8" />
 
+## Atryum Charters
+
+Charters are the special sauce that makes Atryum work.
+
+<img width="997" height="1116" alt="image" src="https://github.com/user-attachments/assets/568f68db-60d1-41f2-9657-5f4ccadec18f" />
+
+Charters are plain English and designed to be read by an LLM. A good charter lays out a constitution for the agent, what it can do automatically, what it can't do, and where a human will need to approve the action.
+
+It's surprisingly safe to write a restrictive charter. Most agents will hit the boundary, recognize it, and pivot their trajectory back to what the user intended. This happens automatically and without human involvement. Example: An agent is prompted to read a single file out of an s3 bucket, it's first tool calls are inspecting iam permissions and s3 bucket properties. Those tool calls are rejected, the agent is put back on task to read only the file it was instructed to read.
+
+Charters can be written in to reference details that will be discovered by the agent. Example: a charter for an agent with slack access allows posting only to the "#ai" channel and allows searching for the "#ai" channel. A tool call like `search_channels("ai")` is approved but `list_channels()` is not. After the search is performed, Atryum has knowledge (pinned to the agent session) of the `id` of the "#ai" channel and uses that to prevent any `write_channel()` tool call that doesn't target the correct channel id. 
 
 ## Atryum Guardrails for Orchestrator Plans
 
