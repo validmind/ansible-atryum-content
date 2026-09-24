@@ -8,11 +8,9 @@ Atryum provides in-the-loop agentic guardrails to any agentic process. It inspec
 
 <img width="2060" height="595" alt="image" src="https://github.com/user-attachments/assets/e1f79c4b-5d7e-4850-957b-33552b1bfe90" />
 
-This increases speed to remediate vulnerabilities.
+**Speed:** Vulnerabilities get remediated faster. The organization goes from "This week 70 Orchestrator workflows were approved and run" to "This week 40 Orchestrator workflows were automatically run and 30 were manually approved."
 
-The organization goes from "This week 70 Orchestrator workflows were approved and run" to "This week 40 Orchestrator workflows were automatically run and 30 were manually approved."
-
-It also increases safety: by using Atryum to control the agents, organizations can remove threats from data exfiltration, downtime from over-ambitious agents taking actions they shouldn't, and wasted spend from stuck agents hitting a permissions boundary.
+**Safety:** By using Atryum to control the agents, organizations can remove threats from data exfiltration, downtime from over-ambitious agents taking actions they shouldn't, and wasted spend from stuck agents hitting a permissions boundary.
 
 **Governance:** The organization sets high-level Agent Charters that apply to all agents automatically. This means that one-off Task Agents in a rarely-used workflow don't require a 4-paragraph boilerplate policy prompt that needs to be updated.
 
