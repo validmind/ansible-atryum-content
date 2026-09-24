@@ -7,7 +7,7 @@ Agentic Steps can be leveraged to analyze a report, inspect the environment, and
 Atryum provides in-the-loop agentic guardrails to any agentic process. It inspects every tool call performed by the agent and permits or denies those calls in real time.
 
 
-/image 3 box sequence "Task agent tries to run tool" "Atruym evaluates tool call against charter" "Tool call approved or denied"
+<img width="2060" height="595" alt="image" src="https://github.com/user-attachments/assets/e1f79c4b-5d7e-4850-957b-33552b1bfe90" />
 
 
 This increases speed to remediate vulnerabilities.
@@ -26,7 +26,10 @@ Task Agent: Set agent to do something disallowed by the Atryum Charter
 Atryum: Dissalow that action in the charter
 Run the Orchestrator workflow.
 
-/image side by side screenshots of orchestrator being permitted to run an action and being denied from running an action
+<img width="1589" height="855" alt="image" src="https://github.com/user-attachments/assets/8debbafc-fdb9-47ca-8221-15cfa4222b3b" />
+
+<img width="437" height="564" alt="image" src="https://github.com/user-attachments/assets/a603a9df-ef3f-4c6a-a70c-1115a10c7654" />
+
 
 Integration between Atryum and Automation Orchestrator comes in two ways:
 
