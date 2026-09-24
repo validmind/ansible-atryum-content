@@ -46,6 +46,9 @@ Setup complete. When running the Workflow you will see all tool calls performed 
 
 <img width="997" height="1116" alt="image" src="https://github.com/user-attachments/assets/568f68db-60d1-41f2-9657-5f4ccadec18f" />
 
+<img width="1866" height="844" alt="image" src="https://github.com/user-attachments/assets/c10bb376-0dcd-4531-84c6-987201cab4b8" />
+
+
 ## Atryum Guardrails for Orchestrator Plans
 
 Ansible Orchestrator can also submit complete plans to Atryum for automatic approval.
