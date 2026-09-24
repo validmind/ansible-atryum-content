@@ -47,9 +47,13 @@ Automation Orchestrator: Create an Agent task. Select the LLM you want to use an
 
 Setup complete - when running the Workflow you will see all tool calls performed by the Task Agent show up in the Atryum invocations view.
 
-/image screenshot of example-blocked
+<img width="3130" height="1260" alt="image" src="https://github.com/user-attachments/assets/2df8334e-31dd-42e7-85c4-1a019715282f" />
 
-/image screenshot of atryum rules and charter
+<img width="2875" height="981" alt="image" src="https://github.com/user-attachments/assets/75d80688-383a-403f-adf7-eff70a62b573" />
+
+<img width="997" height="1116" alt="image" src="https://github.com/user-attachments/assets/568f68db-60d1-41f2-9657-5f4ccadec18f" />
+
+
 
 ## Atryum Guardails for Orchestrator Plans
 
@@ -57,7 +61,11 @@ Ansible Orchestrator can also submit complete plans to Atryum for automatic appr
 
 This allows ansible task agents to follow the familiar "plan" mode to construct a solution to the problem they are facing.
 
-/image screenshot of orchestrator + atryum
+<img width="2803" height="1149" alt="image" src="https://github.com/user-attachments/assets/4e9b892e-ea53-429a-a8e5-29ee2a579340" />
+
+
+<img width="1959" height="1077" alt="image" src="https://github.com/user-attachments/assets/33c9ac0b-2573-4b67-8a00-8146feeb5977" />
+
 
 Example:
 
